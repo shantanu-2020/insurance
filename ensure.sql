@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 28, 2021 at 06:56 PM
+-- Generation Time: Oct 06, 2021 at 02:36 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -43,7 +43,8 @@ INSERT INTO `agent` (`id`, `reference_type`, `discription`) VALUES
 (2, 'ttttttttt', 'ttttttttttttt'),
 (3, 'ssssssssssssssaaaaaaaa', 'ssssssssaaaaaaaaaaaaaa'),
 (4, '444444', '4444444'),
-(5, '111111', '11111111');
+(5, '111111', '11111111'),
+(6, 'dkjdjd', 'djdjdjdjd');
 
 -- --------------------------------------------------------
 
@@ -64,7 +65,13 @@ CREATE TABLE `period` (
 INSERT INTO `period` (`id`, `add_free`, `discription`) VALUES
 (1, 'tttttttttt', 'tttttttttttt'),
 (2, 'xxxxxxxxx', 'xxxxxxxx'),
-(3, 'qqqqqqq', 'qqqqqqq');
+(3, 'qqqqqqq', 'qqqqqqq'),
+(4, 'djdjdjj', 'djdjd'),
+(5, 'aaaaaaa', 'aaaaaaaaa'),
+(6, 'xxxxxxxxx', 'aaaaaaaaaaa'),
+(7, 'xxxxxxxxx', 'lllllllllllll'),
+(8, 'xxxxxxxxx', 'wwwwww'),
+(9, 'xxxxxxxxx', 'aaaaaaaa');
 
 -- --------------------------------------------------------
 
@@ -95,7 +102,15 @@ INSERT INTO `staff` (`id`, `designation_name`, `discription`) VALUES
 (17, 'rashmi', 'kdkdkkdkd'),
 (18, 'vvvvvvvvv', 'dddddddd'),
 (19, 'qqqqq', 'aaaaaaa'),
-(20, 'aaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa');
+(20, 'aaaaaaaaaaaaaa', 'aaaaaaaaaaaaaaa'),
+(21, 'ttttttttt', 'ttttttt'),
+(22, 'rohan', 'qqqqqqqqqq'),
+(23, 'sssssssss', 'aaaaaaaaaaaaaaaaaa'),
+(24, 'hhhh', 'jjjj'),
+(25, 'ooo', 'uuu'),
+(26, 'rashmi panday', 'rashmi panday'),
+(27, 'rohan', 'panday'),
+(28, 'qqqqqqqqq', 'qqqqqqq');
 
 -- --------------------------------------------------------
 
@@ -119,7 +134,8 @@ INSERT INTO `type` (`id`, `agent_advisor`, `discription`) VALUES
 (3, 'wwwww', 'sssssss'),
 (4, 'uuuuuu', 'yyyyyyyyy'),
 (5, 'yyyyyyyyy', 'yyyyyyyyy'),
-(6, '5555555', '555555555');
+(6, '5555555', '555555555'),
+(7, 'gggggggggg', 'ggggggggggggg');
 
 -- --------------------------------------------------------
 
@@ -182,25 +198,25 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `agent`
 --
 ALTER TABLE `agent`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `period`
 --
 ALTER TABLE `period`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `staff`
 --
 ALTER TABLE `staff`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `type`
 --
 ALTER TABLE `type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `users`
